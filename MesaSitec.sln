@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Api", "MesaSitec.Api\MesaSitec.Api.csproj", "{43AC9DA0-A1D6-4BEB-A15C-047290578091}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Application", "MesaSitec.Application\MesaSitec.Application.csproj", "{56054053-5FE0-404C-A46A-72F4B421395F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Domain", "MesaSitec.Domain\MesaSitec.Domain.csproj", "{8247E517-4509-4D43-8E27-6B2758917C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Infrastructure", "MesaSitec.Infrastructure\MesaSitec.Infrastructure.csproj", "{4FA36008-315D-451E-9A49-71DE8A913C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Tests", "MesaSitec.Tests\MesaSitec.Tests.csproj", "{97E4C63D-113F-4CAC-8C89-9877739A36C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43AC9DA0-A1D6-4BEB-A15C-047290578091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AC9DA0-A1D6-4BEB-A15C-047290578091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AC9DA0-A1D6-4BEB-A15C-047290578091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AC9DA0-A1D6-4BEB-A15C-047290578091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56054053-5FE0-404C-A46A-72F4B421395F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56054053-5FE0-404C-A46A-72F4B421395F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56054053-5FE0-404C-A46A-72F4B421395F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56054053-5FE0-404C-A46A-72F4B421395F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8247E517-4509-4D43-8E27-6B2758917C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8247E517-4509-4D43-8E27-6B2758917C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8247E517-4509-4D43-8E27-6B2758917C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8247E517-4509-4D43-8E27-6B2758917C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA36008-315D-451E-9A49-71DE8A913C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA36008-315D-451E-9A49-71DE8A913C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA36008-315D-451E-9A49-71DE8A913C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA36008-315D-451E-9A49-71DE8A913C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E4C63D-113F-4CAC-8C89-9877739A36C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E4C63D-113F-4CAC-8C89-9877739A36C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E4C63D-113F-4CAC-8C89-9877739A36C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E4C63D-113F-4CAC-8C89-9877739A36C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
