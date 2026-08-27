@@ -18,6 +18,7 @@ public class SolicitudesController(ISolicitudService solicitudService) : Control
         [FromQuery] string? prioridad,
         [FromQuery] Guid? categoriaId,
         [FromQuery] Guid? agenteId,
+        [FromQuery] string? agenteNombre,
         [FromQuery] string? q,
         [FromQuery] bool? vencidas,
         [FromQuery] int page = 1,
@@ -25,7 +26,7 @@ public class SolicitudesController(ISolicitudService solicitudService) : Control
         [FromQuery] string? sort = null)
     {
         var user = User.GetCurrentUser();
-        var query = new SolicitudQuery(estado, prioridad, categoriaId, agenteId, q, vencidas, page, pageSize, sort);
+        var query = new SolicitudQuery(estado, prioridad, categoriaId, agenteId, agenteNombre, q, vencidas, page, pageSize, sort);
         return Ok(await solicitudService.ListarAsync(user, query));
     }
 

@@ -23,6 +23,7 @@ public record SolicitudQuery(
     string? Prioridad,
     Guid? CategoriaId,
     Guid? AgenteId,
+    string? AgenteNombre,
     string? Q,
     bool? Vencidas,
     int Page,
@@ -62,6 +63,12 @@ public class SolicitudService(AppDbContext context) : ISolicitudService
 
         if (query.AgenteId.HasValue)
             q = q.Where(s => s.AgenteId == query.AgenteId.Value);
+
+        if (!string.IsNullOrWhiteSpace(query.AgenteNombre))
+        {
+            var nombreTerm = query.AgenteNombre.Trim().ToLower();
+            q = q.Where(s => s.Agente != null && s.Agente.Nombre.ToLower().Contains(nombreTerm));
+        }
 
         if (!string.IsNullOrWhiteSpace(query.Q))
         {
