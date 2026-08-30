@@ -69,8 +69,11 @@ public class SolicitudService(AppDbContext context) : ISolicitudService
             q = q.Where(s =>
                 s.Titulo.ToLower().Contains(term) ||
                 s.Descripcion.ToLower().Contains(term) ||
+                s.Agente.Nombre.ToLower().Contains(term) ||
                 s.Codigo.ToLower().Contains(term));
         }
+
+  
 
         if (query.Vencidas == true)
         {
